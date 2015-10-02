@@ -28,6 +28,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,9 +46,13 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-syntax on
 set nu
 set background=dark
+set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.swp,*.zip 
+set sw=2 ts=2 sts=2
+set expandtab
+
+syntax on
 colorscheme solarized
 
 map <C-n> :NERDTreeToggle<CR>
@@ -54,4 +60,3 @@ map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>
 
-set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.swp,*.zip 
