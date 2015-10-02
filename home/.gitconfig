@@ -1,28 +1,28 @@
 [user]
- name = Girts Silis
- email = girts.silis@gmail.com
+  name = Girts Silis
+  email = girts.silis@gmail.com
 [giggle]
- main-window-maximized = false
- main-window-geometry = 559x597+0+0
- file-view-vpane-position = 533
- history-view-vpane-position = 309
- main-window-view = HistoryView
+  main-window-maximized = false
+  main-window-geometry = 559x597+0+0
+  file-view-vpane-position = 533
+  history-view-vpane-position = 309
+  main-window-view = HistoryView
 [alias]
- co = checkout
- b = branch -v --color
- bv = branch -avv --color
- st = status
- l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  co = checkout
+  b = branch -v --color
+  bv = branch -avv --color
+  st = status
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   ls = smart-log
- cam = commit -am
- pullr = pull --rebase
+  cam = commit -am
+  pullr = pull --rebase
   pulr = pull --rebase
   rb = rebase
   rbc = rebase --continue
- unpushed = rev-list HEAD --pretty ^origin/master
- dif = diff
+  unpushed = rev-list HEAD --pretty ^origin/master
+  dif = diff
   cp = cherry-pick
- ci = commit
+  ci = commit
   cav = commit -av
   cv = commit -v
   a = add
@@ -39,20 +39,19 @@
   cleanse = "!git ls-files --others --exclude-standard | xargs rm"
   rma = "!git ls-files --deleted | xargs git rm"
 [color]
- diff = auto
- status = auto
- branch = auto
- blame = true
-ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+  meta = yellow
+  frag = magenta
+  old = red
+  new = green
 [color "status"]
   added = yellow
   changed = green
@@ -68,11 +67,11 @@ ui = true
   editor = vim
   pager = "less -FRSX"
   excludesfile = ~/.gitignore
-autocrlf = input
+  autocrlf = input
 [push]
- default = tracking
+  default = tracking
 [filter "media"]
-clean = git-media filter-clean
-smudge = git-media filter-smudge
+  clean = git-media filter-clean
+  smudge = git-media filter-smudge
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
