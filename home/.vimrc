@@ -49,6 +49,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set nu
+set mouse=a
 set background=dark
 set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.swp,*.zip 
 set sw=2 ts=2 sts=2
