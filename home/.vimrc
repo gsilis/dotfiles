@@ -55,6 +55,10 @@ set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.sw
 set sw=2 ts=2 sts=2
 set expandtab
 
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+
 syntax on
 colorscheme solarized
 
