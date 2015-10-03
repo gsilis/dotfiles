@@ -1,7 +1,7 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/girtssilis/.oh-my-zsh
+DEFAULT_USER="punchy"
 
-DEFAULT_USER="girtssilis"
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
 
 alias g="git"
 alias cl="clear"
@@ -58,7 +58,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="$PATH:/Users/girtssilis/.rvm/gems/ruby-2.2.2/bin:/Users/girtssilis/.rvm/gems/ruby-2.2.2@global/bin:/Users/girtssilis/.rvm/rubies/ruby-2.2.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/girtssilis/.rvm/bin"
+export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2/bin:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2@global/bin:/Users/$DEFAULT_USER/.rvm/rubies/ruby-2.2.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/$DEFAULT_USER/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
