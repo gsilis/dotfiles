@@ -7,3 +7,5 @@
 ##Todo
 
 - Remove edit of `DEFAULT_USER`
+- Remove copy of solarized theme with submodule or plugin?`
+
