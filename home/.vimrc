@@ -27,11 +27,14 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-endwise'
 Plugin 'bling/vim-airline'
+
+" Language support
+Plugin 'pangloss/vim-javascript'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
