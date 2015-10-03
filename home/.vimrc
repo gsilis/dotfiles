@@ -54,6 +54,7 @@ set background=dark
 set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.swp,*.zip 
 set sw=2 ts=2 sts=2
 set expandtab
+set laststatus=2
 
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
