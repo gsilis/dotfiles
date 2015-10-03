@@ -70,4 +70,5 @@ map <C-n> :NERDTreeToggle<CR>
 map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>
+inoremap {<CR> {<CR>}<C-o>O
 
