@@ -20,6 +20,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'bling/vim-airline'
 
 " Language support
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
 
