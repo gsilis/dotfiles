@@ -4,6 +4,7 @@
 1. Set `DEFAULT_USER`
 1. Install `vundle` -> `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 1. Brew install `CMake` so that you can use `Valloric/YouCompleteMe`
+1. Install macvim and symlink its binary to `/usr/local/bin/vim`
 
 ##Todo
 
