@@ -15,6 +15,8 @@ else
 fi
 
 # Link stuff
+ln -s ./home/.gitconfig ~/.gitconfig
+ln -s ./home/.git_template ~/.git_template
 ln -s ./home/.vim ~/.vim
 ln -s ./home/.vimrc ~/.vimrc
 ln -s /usr/local/bin/mvim /usr/local/bin/vim
