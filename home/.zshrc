@@ -1,4 +1,4 @@
-DEFAULT_USER="punchy"
+DEFAULT_USER=$USER
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
