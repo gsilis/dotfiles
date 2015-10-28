@@ -24,6 +24,7 @@ Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'https://github.com/slim-template/vim-slim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
