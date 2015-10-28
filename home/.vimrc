@@ -61,5 +61,6 @@ map <C-n> :NERDTreeToggle<CR>
 map gn :bn!<cr>
 map gp :bp!<cr>
 map gd :bd<cr>
+map // <leader>ci
 inoremap {<CR> {<CR>}<C-o>O
 
