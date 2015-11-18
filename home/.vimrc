@@ -25,6 +25,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'https://github.com/slim-template/vim-slim'
+Plugin 'https://github.com/Raimondi/delimitMate'
+Plugin 'https://github.com/ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
