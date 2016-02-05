@@ -8,7 +8,8 @@ alias cl="clear"
 alias rmnode='rm -rf node_modules && rm -rf bower_components'
 alias nodeplz='npm install && bower install'
 alias omgnode='rmnode && nodeplz'
-alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install’
+alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
+alias vi='vim'
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
