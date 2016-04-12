@@ -51,13 +51,11 @@ set expandtab
 set laststatus=2
 
 let mapleader='\'
-let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:mustache_abbreviations=2
 
 syntax on
-colorscheme solarized
 
 map <C-n> :NERDTreeToggle<CR>
 map gn :bn!<cr>
