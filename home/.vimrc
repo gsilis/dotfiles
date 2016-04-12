@@ -50,6 +50,12 @@ set expandtab
 set laststatus=2
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
 
+" Disable temp and backup files
+set wildignore+=*.swp,*~,._*
+
+" Disable Ex mode from Q
+nnoremap Q <nop>
+
 let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
