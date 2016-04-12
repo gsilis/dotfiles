@@ -69,6 +69,7 @@ map gn :bn!<cr>
 map gp :bp!<cr>
 map gd :bd<cr>
 map <C-c> <leader>ci
+map <C-b> :Gblame<cr>
 inoremap {<CR> {<CR>}<C-o>O
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
