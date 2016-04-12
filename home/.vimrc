@@ -49,6 +49,7 @@ set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
+hi LineNr ctermbg=black
 
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
