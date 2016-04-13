@@ -18,7 +18,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-endwise'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Language support
 Plugin 'pangloss/vim-javascript'
@@ -62,6 +63,7 @@ let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:mustache_abbreviations=2
+let g:airline_theme='wombat'
 
 syntax on
 
