@@ -3,6 +3,7 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+set clipboard=unnamed
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -50,8 +51,8 @@ set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
-hi LineNr ctermbg=black
-hi VertSplit ctermbg=black ctermfg=black
+hi LineNr ctermfg=59 ctermbg=16
+hi VertSplit ctermfg=16 ctermbg=16
 
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
