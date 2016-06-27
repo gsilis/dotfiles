@@ -21,6 +21,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tyrannicaltoucan/vim-deep-space'
 
 " Language support
 Plugin 'pangloss/vim-javascript'
@@ -50,9 +51,13 @@ set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.sw
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
+set clipboard=unnamed
+set t_Co=256
+set background=dark
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
-hi LineNr ctermfg=59 ctermbg=16
-hi VertSplit ctermfg=16 ctermbg=16
+colorscheme deep-space
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
 
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
@@ -64,7 +69,6 @@ let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:mustache_abbreviations=2
-let g:airline_theme='wombat'
 
 syntax on
 

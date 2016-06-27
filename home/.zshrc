@@ -10,6 +10,8 @@ alias nodeplz='npm install && bower install'
 alias omgnode='rmnode && nodeplz'
 alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
 alias vi='vim'
+alias clojure="java -cp /Users/$DEFAULT_USER/libs/clojure.latest.jar clojure.main"
+alias lein="leinigen"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -63,8 +65,9 @@ plugins=(git)
 
 # User configuration
 
-export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2/bin:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2@global/bin:/Users/$DEFAULT_USER/.rvm/rubies/ruby-2.2.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/$DEFAULT_USER/.rvm/bin"
+export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2/bin:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2@global/bin:/Users/$DEFAULT_USER/.rvm/rubies/ruby-2.2.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/$DEFAULT_USER/.rvm/bin:/Users/$DEFAULT_USER/libs/scripts:/Users/$DEFAULT_USER/RTcmix-4.2.0/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+export TERM=xterm-256color
 
 source $ZSH/oh-my-zsh.sh
 
