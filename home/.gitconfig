@@ -38,6 +38,7 @@
   bsb = bisect bad
   cleanse = "!git ls-files --others --exclude-standard | xargs rm"
   rma = "!git ls-files --deleted | xargs git rm"
+	d = difftool
 [color]
   diff = auto
   status = auto
@@ -75,3 +76,7 @@
   smudge = git-media filter-smudge
 [init]
   templatedir = ~/.git_template
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

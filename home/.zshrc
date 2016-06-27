@@ -12,6 +12,7 @@ alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_
 alias vi='vim'
 alias clojure="java -cp /Users/$DEFAULT_USER/libs/clojure.latest.jar clojure.main"
 alias lein="leinigen"
+alias repow="touch ~/.pow/restart.txt"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

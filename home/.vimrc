@@ -47,7 +47,7 @@ filetype plugin indent on    " required
 
 set nu
 set mouse=a
-set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.swp,*.zip 
+set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zip,*.swp,*~,._*
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
@@ -58,9 +58,6 @@ hi MatchParen cterm=bold ctermbg=red ctermfg=white
 colorscheme deep-space
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
-
-" Disable temp and backup files
-set wildignore+=*.swp,*~,._*
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
