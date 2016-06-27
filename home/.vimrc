@@ -3,7 +3,6 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-set clipboard=unnamed
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -45,19 +44,17 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+set clipboard=unnamed
+set background=dark
 set nu
 set mouse=a
 set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zip,*.swp,*~,._*
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
-set clipboard=unnamed
 set t_Co=256
-set background=dark
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
 colorscheme deep-space
-highlight Normal ctermbg=NONE
-highlight nonText ctermbg=NONE
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
