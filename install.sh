@@ -20,6 +20,7 @@ ln -s ./home/.git_template ~/.git_template
 ln -s ./home/.vim ~/.vim
 ln -s ./home/.vimrc ~/.vimrc
 ln -s /usr/local/bin/mvim /usr/local/bin/vim
+ln -s ./scripts ~/.scripts
 
 # Make sure we have plugins
 vim +PluginInstall +qall

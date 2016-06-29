@@ -75,7 +75,7 @@ export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
 export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/bin"
-export PATH="$PATH:/.scripts"
+export PATH="$PATH:/Users/$DEFAULT_USER/.scripts"
 export PATH="$PATH:/Users/$DEFAULT_USER/RTcmix-4.2.0/bin"
 
 export TERM=xterm-256color
