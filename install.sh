@@ -22,6 +22,9 @@ ln -s ./home/.vimrc ~/.vimrc
 ln -s /usr/local/bin/mvim /usr/local/bin/vim
 ln -s ./scripts ~/.scripts
 
+# Make scripts executable
+chmod +x ~/.scripts/*
+
 # Make sure we have plugins
 vim +PluginInstall +qall
 
