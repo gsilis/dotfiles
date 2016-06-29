@@ -27,5 +27,6 @@ g++ $infile -std=c++11 -o $outfile
 echo "Compiled '$infile' > '$outfile'"
 
 if [ $shouldrun -eq 1 ]; then
+  echo "Running '${outfile}'\n"
   "./${outfile}"
 fi
