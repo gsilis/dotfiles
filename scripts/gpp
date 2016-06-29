@@ -24,6 +24,10 @@ if [ "$outfile" == "" ]; then
 fi;
 
 g++ $infile -std=c++11 -o $outfile
+if [ $? -gt 0 ]; then
+  exit;
+fi
+
 echo "Compiled '$infile' > '$outfile'"
 
 if [ $shouldrun -eq 1 ]; then
