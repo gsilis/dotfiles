@@ -66,8 +66,18 @@ plugins=(git)
 
 # User configuration
 
-export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2/bin:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2@global/bin:/Users/$DEFAULT_USER/.rvm/rubies/ruby-2.2.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/$DEFAULT_USER/.rvm/bin:/Users/$DEFAULT_USER/libs/scripts:/Users/$DEFAULT_USER/RTcmix-4.2.0/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2/bin"
+export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2@global/bin"
+export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/rubies/ruby-2.2.2/bin"
+export PATH="$PATH:/usr/local/bin"
+export PATH="$PATH:/usr/bin"
+export PATH="$PATH:/bin"
+export PATH="$PATH:/usr/sbin"
+export PATH="$PATH:/sbin"
+export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/bin"
+export PATH="$PATH:/.scripts"
+export PATH="$PATH:/Users/$DEFAULT_USER/RTcmix-4.2.0/bin"
+
 export TERM=xterm-256color
 
 source $ZSH/oh-my-zsh.sh
