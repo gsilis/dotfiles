@@ -5,14 +5,27 @@
 # will break for file names that include dots as space delimiters
 # e.g. some.file.cpp
 
+infile=
 outfile=
+shouldrun=0
 
-if [ "$2" == "" ]; then
-  IFS=. read outfile afterdot <<< "${1}"
-  outfile="bin.${outfile}"
+if [ "$1" == "run" ]; then
+  infile=$2
+  outfile=$3
+  shouldrun=1
 else
+  infile=$1
   outfile=$2
+fi
+
+if [ "$outfile" == "" ]; then
+  IFS=. read outfile afterdot <<< "${infile}"
+  outfile="bin.${outfile}"
 fi;
 
-g++ $1 -std=c++11 -o $outfile
-echo "Compiled '$1' > '$outfile'"
+g++ $infile -std=c++11 -o $outfile
+echo "Compiled '$infile' > '$outfile'"
+
+if [ $shouldrun -eq 1 ]; then
+  "./${outfile}"
+fi
