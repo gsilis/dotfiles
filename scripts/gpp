@@ -5,11 +5,14 @@
 # will break for file names that include dots as space delimiters
 # e.g. some.file.cpp
 
-if ["$2" == ""]
-then
+outfile=
+
+if [ "$2" == "" ]; then
   IFS=. read outfile afterdot <<< "${1}"
+  outfile="bin.${outfile}"
 else
-  outfile = $2
-fi
+  outfile=$2
+fi;
 
 g++ $1 -std=c++11 -o $outfile
+echo "Compiled '$1' > '$outfile'"
