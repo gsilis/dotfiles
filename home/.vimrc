@@ -65,7 +65,7 @@ let g:mustache_abbreviations=2
 
 syntax on
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
-hi Normal ctermbg=none
+hi Normal ctermbg=none ctermfg=grey
 
 map <C-n> :NERDTreeToggle<CR>
 map gn :bn!<cr>
