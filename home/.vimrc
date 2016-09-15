@@ -21,6 +21,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tyrannicaltoucan/vim-deep-space'
+Plugin 'whatyouhide/vim-gotham'
 
 " Language support
 Plugin 'pangloss/vim-javascript'
@@ -45,15 +46,15 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set clipboard=unnamed
-set background=dark
+"set background=dark
 set nu
 set mouse=a
 set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zip,*.swp,*~,._*
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
-set t_Co=256
-colorscheme deep-space
+"set t_Co=256
+colorscheme gotham256
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
@@ -65,7 +66,6 @@ let g:mustache_abbreviations=2
 
 syntax on
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
-hi Normal ctermbg=none ctermfg=grey
 
 map <C-n> :NERDTreeToggle<CR>
 map gn :bn!<cr>
