@@ -53,7 +53,6 @@ set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
 set t_Co=256
-hi MatchParen cterm=bold ctermbg=red ctermfg=white
 colorscheme deep-space
 
 " Disable Ex mode from Q
@@ -65,6 +64,8 @@ let g:airline#extensions#tabline#enabled=1
 let g:mustache_abbreviations=2
 
 syntax on
+hi MatchParen cterm=bold ctermbg=red ctermfg=white
+hi Normal ctermbg=none
 
 map <C-n> :NERDTreeToggle<CR>
 map gn :bn!<cr>
