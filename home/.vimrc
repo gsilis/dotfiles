@@ -46,15 +46,14 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set clipboard=unnamed
-"set background=dark
+set background=dark
 set nu
 set mouse=a
 set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zip,*.swp,*~,._*
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
-"set t_Co=256
-colorscheme gotham256
+colorscheme blaquemagick
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
@@ -62,6 +61,7 @@ nnoremap Q <nop>
 let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
+let g:airline_theme="papercolor"
 let g:mustache_abbreviations=2
 
 syntax on
