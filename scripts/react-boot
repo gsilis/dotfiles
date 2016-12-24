@@ -11,7 +11,9 @@ echo "{
     \"react\"
   ]
 }" >> ".babelrc"
-echo "module.exports = {
+echo "var path = require('path');
+
+module.exports = {
   entry: './app/main.js',
   output: {
     path: './app',
@@ -22,10 +24,18 @@ echo "module.exports = {
     contentBase: './app',
     port: 8100
   },
+  resolve: {
+    moduleDirectories: [
+      'node_modules',
+      'app'
+    ],
+    extensions: ['', '.js', '.jsx', '.json'],
+    root: path.resolve('./app')
+  },
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: '/node_modules/',
         loader: 'babel'
       }
