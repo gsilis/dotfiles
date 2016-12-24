@@ -26,13 +26,43 @@ echo "module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        exclude: '/node_modules/'
+        exclude: '/node_modules/',
         loader: 'babel'
       }
     ]
   }
 }" >> "webpack.config.js"
 echo "/node_modules/*" >> ".gitignore"
+
+# Setup application directory
+mkdir app
+cd app
+echo "<!DOCTYPE html>
+<html lang=\"en\">
+  <head>
+    <meta charset=\"UTF-8\">
+    <title>React Router</title>
+  </head>
+  <body>
+    <div id=\"root\"></div>
+    <script src=\"./bundle.js\"></script>
+  </body>
+</html>" >> index.html
+echo "import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app';
+ReactDOM.render(<App />, document.getElementById('root'));" >> main.js
+echo "import React, { Component } from 'react';
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
+const App = () => <h1>Hello World!</h1>;
+export default App;" >> app.js
+
+# Add the webpack script
+cd ..
+npmAddScript -k start -v "webpack-dev-server"
+# if this fails, you need to `npm install -g npm-add-script`
+
+# Commit everything to a new repo and exit
 git init
 git add .
 git commit -m "Initial commit"
