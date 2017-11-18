@@ -1,4 +1,6 @@
 #!/bin/bash
+# Disabling this script -- needs more work
+exit 1
 
 # Check for things we depend on
 if command -v brew >/dev/null; then

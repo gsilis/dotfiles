@@ -17,10 +17,10 @@ hi Comment      term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
 hi Constant     term=NONE cterm=NONE ctermfg=66   ctermbg=NONE
 hi Cursor       term=NONE cterm=NONE ctermfg=242  ctermbg=NONE
 hi CursorLine   term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE
-hi DiffAdd      term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi DiffChange   term=NONE cterm=NONE ctermfg=NONE ctermbg=66
-hi DiffDelete   term=NONE cterm=NONE ctermfg=251  ctermbg=66
-hi DiffText     term=NONE cterm=NONE ctermfg=251  ctermbg=244
+hi DiffAdd      term=NONE cterm=NONE ctermfg=40   ctermbg=NONE
+hi DiffChange   term=NONE cterm=NONE ctermfg=178  ctermbg=NONE
+hi DiffDelete   term=NONE cterm=NONE ctermfg=160  ctermbg=NONE
+hi DiffText     term=NONE cterm=NONE ctermfg=251  ctermbg=NONE
 hi Directory    term=NONE cterm=NONE ctermfg=244  ctermbg=NONE
 hi Error        term=NONE cterm=NONE ctermfg=238  ctermbg=66
 hi ErrorMsg     term=NONE cterm=NONE ctermfg=66   ctermbg=NONE

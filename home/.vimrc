@@ -15,9 +15,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'https://github.com/scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-endwise'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tyrannicaltoucan/vim-deep-space'
@@ -52,7 +50,8 @@ set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zi
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
-colorscheme one
+colorscheme blaquemagick
+set background=dark
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
@@ -60,7 +59,7 @@ nnoremap Q <nop>
 let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme="light"
+let g:airline_theme="papercolor"
 let g:mustache_abbreviations=2
 
 syntax on
