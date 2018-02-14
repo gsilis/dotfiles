@@ -25,7 +25,6 @@ Plugin 'whatyouhide/vim-gotham'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'https://github.com/slim-template/vim-slim'
-Plugin 'https://github.com/Raimondi/delimitMate'
 Plugin 'https://github.com/ervandew/supertab'
 
 " All of your Plugins must be added before the following line
@@ -50,8 +49,7 @@ set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zi
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
-colorscheme blaquemagick
-set background=dark
+colorscheme znake
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
