@@ -27,7 +27,7 @@ let s:grey3      = "868686"
 let s:darkgrey   = "0b0b0b"
 
 let s:comment    = "2a5680"
-let s:linenr     = "333333"
+let s:linenr     = "395784"
 let s:linecolumn = "230012"
 
 let s:diffgreen  = "033108"
