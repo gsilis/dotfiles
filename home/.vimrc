@@ -45,7 +45,7 @@ filetype plugin indent on    " required
 set clipboard=unnamed
 set nu
 set mouse=a
-set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zip,*.swp,*~,._*
+set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zip,*.swp,*~,._*,*/spec/reports/*
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
@@ -59,7 +59,7 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="papercolor"
 let g:mustache_abbreviations=2
-let g:NERDTreeIgnore=['node_modules', 'bower_components']
+let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*']
 
 syntax on
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
