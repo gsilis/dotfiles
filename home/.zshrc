@@ -2,6 +2,8 @@ DEFAULT_USER=$USER
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
+export COLORTERM="truecolor"
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 alias g="git"
 alias cl="clear"
@@ -13,6 +15,8 @@ alias vi='vim'
 alias clojure="java -cp /Users/$DEFAULT_USER/libs/clojure.latest.jar clojure.main"
 alias lein="leinigen"
 alias repow="touch ~/.pow/restart.txt"
+alias be="bundle exec"
+alias ber="bundle exec rails"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -66,9 +70,6 @@ plugins=(git)
 
 # User configuration
 
-export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2/bin"
-export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/gems/ruby-2.2.2@global/bin"
-export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/rubies/ruby-2.2.2/bin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/bin"
@@ -106,3 +107,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+eval "$(rbenv init -)"
