@@ -23,7 +23,6 @@ Plugin 'whatyouhide/vim-gotham'
 
 " Language support
 Plugin 'pangloss/vim-javascript'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'https://github.com/slim-template/vim-slim'
 Plugin 'https://github.com/ervandew/supertab'
 
@@ -57,9 +56,10 @@ nnoremap Q <nop>
 let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme="papercolor"
+let g:airline_theme="murmur"
 let g:mustache_abbreviations=2
 let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*']
+let g:ctrlp_max_height=32
 
 syntax on
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
@@ -68,6 +68,11 @@ map <C-n> :NERDTreeToggle<CR>
 map gn :bn!<cr>
 map gp :bp!<cr>
 map gd :bd<cr>
+map <leader>b :buffers<cr>
+map tn :tabn<cr>
+map tp :tabp<cr>
+map tt :tabnew<cr>
+map <leader>t :tabs<cr>
 map <C-c> <leader>ci
 map <C-b> :Gblame<cr>
 inoremap {<CR> {<CR>}<C-o>O
