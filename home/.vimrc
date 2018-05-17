@@ -14,6 +14,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'https://github.com/scrooloose/nerdcommenter'
+Plugin 'https://github.com/joukevandermaas/vim-ember-hbs.git'
+Plugin 'https://github.com/mxw/vim-jsx.git'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
@@ -59,6 +61,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="murmur"
 let g:mustache_abbreviations=2
 let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*']
+let g:NERDTreeShowLineNumbers=1
 let g:ctrlp_max_height=32
 
 syntax on
