@@ -28,6 +28,7 @@ let s:darkgrey   = "0b0b0b"
 
 let s:comment    = "2a5680"
 let s:linenr     = "395784"
+let s:linenrbg   = ""
 let s:linecolumn = "230012"
 
 let s:diffgreen  = "033108"
@@ -265,7 +266,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Tabdarkgrey", s:white, s:black, "reverse")
 	call <SID>X("Statusdarkgrey", s:grey2, s:yellow, "reverse")
 	call <SID>X("StatusdarkgreyNC", s:grey2, s:grey3, "reverse")
-	call <SID>X("VertSplit", s:middlegrey, s:middlegrey, "none")
+	call <SID>X("VertSplit", s:black, s:black, "none")
   call <SID>X("Visual", "", s:darkpink, "")
 	"call <SID>X("Visual", "", s:black, "reverse")
 	call <SID>X("Directory", s:blue, "", "")
@@ -278,7 +279,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("FoldColumn", "", s:black, "")
 	if version >= 700
 		call <SID>X("Cursor", "", s:pink, "none")
-		call <SID>X("LineNr", s:linenr, "", "none")
+		call <SID>X("LineNr", s:linenr, s:linenrbg, "none")
 		call <SID>X("Cursordarkgrey", "", s:darkred, "none")
 		call <SID>X("CursorColumn", "", s:darkred, "none")
 		call <SID>X("CursorLine", "", s:linecolumn, "none")
