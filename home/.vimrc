@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'whatyouhide/vim-gotham'
+Plugin 'leafgarland/typescript-vim'
 
 " Language support
 Plugin 'pangloss/vim-javascript'
@@ -60,7 +61,7 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="murmur"
 let g:mustache_abbreviations=2
-let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*']
+let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*', '__pycache__']
 let g:NERDTreeShowLineNumbers=1
 let g:ctrlp_max_height=32
 
