@@ -2,10 +2,19 @@
 
 dirname=$1
 
-if [ -d "$dirname" ]; then
-  echo "Error: Directory '$dirname' already exists"
-  exit 1
+if [ "$dirname" = "" ]; then
+  echo "Phaser bootstrapper\nUsage:\n\n  phaser <dirname>\n\n"
+  exit 0
 fi
 
-mkdir "$dirname"
+if [ "$dirname" = "." ]; then
+  echo "Bootstrapping in current working directory"
+elif [ -d "$dirname" ]; then
+  echo "Error: Directory '$dirname' already exists"
+  exit 1
+else
+  echo "Creating directory '${dirname}'"
+  mkdir "$dirname"
+fi
+
 git clone https://github.com/photonstorm/phaser3-project-template.git "$dirname"
