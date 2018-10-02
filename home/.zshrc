@@ -15,6 +15,7 @@ alias nodeplz='npm install && bower install'
 alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
 alias omgnode='rmnode && nodeplz'
 alias rb='rbenv'
+alias react="npx create-react-app"
 alias repow="touch ~/.pow/restart.txt"
 alias rmnode='rm -rf node_modules && rm -rf bower_components'
 alias vi='vim'
@@ -109,3 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(rbenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
