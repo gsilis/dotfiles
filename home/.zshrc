@@ -5,18 +5,19 @@ export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
 export COLORTERM="truecolor"
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-alias g="git"
-alias cl="clear"
-alias rmnode='rm -rf node_modules && rm -rf bower_components'
-alias nodeplz='npm install && bower install'
-alias omgnode='rmnode && nodeplz'
-alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
-alias vi='vim'
-alias clojure="java -cp /Users/$DEFAULT_USER/libs/clojure.latest.jar clojure.main"
-alias lein="leinigen"
-alias repow="touch ~/.pow/restart.txt"
 alias be="bundle exec"
 alias ber="bundle exec rails"
+alias cl="clear"
+alias clojure="java -cp /Users/$DEFAULT_USER/libs/clojure.latest.jar clojure.main"
+alias g="git"
+alias lein="leinigen"
+alias nodeplz='npm install && bower install'
+alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
+alias omgnode='rmnode && nodeplz'
+alias rb='rbenv'
+alias repow="touch ~/.pow/restart.txt"
+alias rmnode='rm -rf node_modules && rm -rf bower_components'
+alias vi='vim'
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
