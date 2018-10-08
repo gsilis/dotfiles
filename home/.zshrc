@@ -7,17 +7,15 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 alias be="bundle exec"
 alias ber="bundle exec rails"
-alias cl="clear"
+alias broc="broccoli"
 alias clojure="java -cp /Users/$DEFAULT_USER/libs/clojure.latest.jar clojure.main"
+alias dk="docker"
+alias dkrm="docker rm $(docker ps -a -q -f status=exited)"
 alias g="git"
 alias lein="leinigen"
-alias nodeplz='npm install && bower install'
-alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
-alias omgnode='rmnode && nodeplz'
+alias po="python"
 alias rb='rbenv'
 alias react="npx create-react-app"
-alias repow="touch ~/.pow/restart.txt"
-alias rmnode='rm -rf node_modules && rm -rf bower_components'
 alias vi='vim'
 alias vimdiff="vim"
 
@@ -78,9 +76,8 @@ export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
-export PATH="$PATH:/Users/$DEFAULT_USER/.rvm/bin"
 export PATH="$PATH:/Users/$DEFAULT_USER/.scripts"
-export PATH="$PATH:/Users/$DEFAULT_USER/RTcmix-4.2.0/bin"
+export PATH="$HOME/.scripts:$HOME/.rbenv/shims:$PATH"
 
 export TERM=xterm-256color
 
@@ -111,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(rbenv init -)"
+eval "$(pyenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
