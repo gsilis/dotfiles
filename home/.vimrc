@@ -51,6 +51,8 @@ set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zi
 set sw=2 ts=2 sts=2
 set expandtab
 set laststatus=2
+set backspace=indent,eol,start
+
 colorscheme znake
 
 " Disable Ex mode from Q
