@@ -3,7 +3,6 @@ DEFAULT_USER=$USER
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
 export COLORTERM="truecolor"
-export JAVA_HOME=$(/usr/libexec/java_home)
 
 alias be="bundle exec"
 alias ber="bundle exec rails"
