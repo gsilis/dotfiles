@@ -19,6 +19,7 @@ alias react="npx create-react-app"
 alias repow="touch ~/.pow/restart.txt"
 alias rmnode='rm -rf node_modules && rm -rf bower_components'
 alias vi='vim'
+alias vimdiff="vim"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
