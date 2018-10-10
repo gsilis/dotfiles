@@ -75,6 +75,7 @@ map <C-n> :NERDTreeToggle<CR>
 map gn :bn!<cr>
 map gp :bp!<cr>
 map gd :bd<cr>
+map ga :%bd<cr>
 map <leader>b :buffers<cr>
 map tn :tabn<cr>
 map tp :tabp<cr>
