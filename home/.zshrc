@@ -11,6 +11,7 @@ alias clojure="java -cp /Users/$DEFAULT_USER/libs/clojure.latest.jar clojure.mai
 alias dk="docker"
 alias dkrm="docker rm $(docker ps -a -q -f status=exited)"
 alias g="git"
+alias kb="kubectl"
 alias lein="leinigen"
 alias po="python"
 alias rb='rbenv'
@@ -77,7 +78,8 @@ export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/Users/$DEFAULT_USER/.scripts"
-export PATH="$HOME/.scripts:$HOME/.rbenv/shims:$PATH"
+export PATH="$PATH:/usr/local/opt/postgresql@9.6/bin"
+export PATH="$PATH:$HOME/.scripts:$HOME/.rbenv/shims"
 
 export TERM=xterm-256color
 

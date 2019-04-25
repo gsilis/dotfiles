@@ -16,6 +16,7 @@ Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'https://github.com/scrooloose/nerdcommenter'
 Plugin 'https://github.com/joukevandermaas/vim-ember-hbs.git'
 Plugin 'https://github.com/mxw/vim-jsx.git'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
@@ -66,7 +67,13 @@ let g:mustache_abbreviations=2
 let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*', '__pycache__', '.git', '**/*.swp']
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeShowHidden=1
+let g:NERDTreeNodeDelimiter = "\u00a0"
+let g:NERDTreeWinSize=60
 let g:ctrlp_max_height=32
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 syntax on
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
