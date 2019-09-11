@@ -24,6 +24,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'posva/vim-vue'
 
 " Language support
 Plugin 'pangloss/vim-javascript'
