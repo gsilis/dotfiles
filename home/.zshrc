@@ -4,6 +4,9 @@ DEFAULT_USER=$USER
 export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
 export COLORTERM="truecolor"
 export PYTHONSTARTUP=~/.pystartup
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
 alias be="bundle exec"
 alias ber="bundle exec rails"

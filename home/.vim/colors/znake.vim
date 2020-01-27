@@ -49,6 +49,7 @@ let s:wikiblue   = "66ccff"
 set background=dark
 hi clear
 syntax reset
+highlight EndOfBuffer ctermfg=0
 
 let g:colors_name = "znake"
 

@@ -48,6 +48,7 @@ filetype plugin indent on    " required
 
 set clipboard=unnamed
 set nu
+"set relativenumber
 set mouse=a
 set wildignore+=*/tmp/*,*/dist/*,*/bower_components/*,*/node_modules/*,*.so,*.zip,*.swp,*~,._*,*/spec/reports/*
 set sw=2 ts=2 sts=2
