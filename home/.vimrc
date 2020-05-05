@@ -56,7 +56,7 @@ set expandtab
 set laststatus=2
 set backspace=indent,eol,start
 
-colorscheme znake
+colorscheme quantum
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
@@ -64,9 +64,9 @@ nnoremap Q <nop>
 let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme="murmur"
+let g:airline_theme="term_light"
 let g:mustache_abbreviations=2
-let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*', '__pycache__', '.git', '**/*.swp']
+let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*', '__pycache__', '.git', '**/*.swp', '.bundle']
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeShowHidden=1
 let g:NERDTreeNodeDelimiter = "\u00a0"
@@ -76,6 +76,10 @@ let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
+if exists("g:ctrl_user_command")
+  unlet g:ctrlp_user_command
+endif
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/\.git/*,.bundle,*/db/migrate/*
 
 syntax on
 hi MatchParen cterm=bold ctermbg=red ctermfg=white
