@@ -5,10 +5,10 @@
 " Pretty much stolen from the Tomorrow theme https://github.com/chriskempson/tomorrow-theme
 
 " Default GUI Colours
-let s:white      = "eaeaea"
+let s:white      = "addeff"
 let s:black      = "000000"
 "let s:red        = "da4939"
-let s:red        = "ff7575"
+let s:red        = "ff8585"
 "let s:red        = "ff5f5f"
 "let s:darkred    = "2a0014"
 let s:darkred    = "ff5745"
@@ -31,7 +31,7 @@ let s:darkgrey   = "0b0b0b"
 
 let s:comment    = "2a5680"
 let s:linenr     = "395784"
-let s:linenrbg   = ""
+let s:linenrbg   = "000b2e"
 let s:linecolumn = "230012"
 
 let s:diffgreen  = "033108"
