@@ -25,7 +25,6 @@ Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'posva/vim-vue'
-Plugin 'ayu-theme/ayu-vim'
 
 " Language support
 Plugin 'pangloss/vim-javascript'
@@ -57,6 +56,7 @@ set expandtab
 set laststatus=2
 set backspace=indent,eol,start
 
+set termguicolors
 let ayucolor="light"
 colorscheme ayu
 
