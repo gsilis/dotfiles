@@ -20,7 +20,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'https://github.com/vim-airline/vim-airline-themes'
 Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'leafgarland/typescript-vim'
@@ -57,8 +57,12 @@ set laststatus=2
 set backspace=indent,eol,start
 
 set termguicolors
-let ayucolor="light"
-colorscheme ayu
+colorscheme wombat256grf
+"colorscheme znake
+"AYU LIGHT 
+"let ayucolor="light"
+"colorscheme ayu
+"/AYU LIGHT
 
 " Disable Ex mode from Q
 nnoremap Q <nop>
@@ -66,7 +70,7 @@ nnoremap Q <nop>
 let mapleader='\'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme="term_light"
+let g:airline_theme="deus"
 let g:mustache_abbreviations=2
 let g:NERDTreeIgnore=['node_modules', 'bower_components', 'spec/reports/*', '__pycache__', '.git', '**/*.swp', '.bundle']
 let g:NERDTreeShowLineNumbers=1
