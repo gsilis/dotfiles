@@ -1,6 +1,6 @@
 [user]
-  name = Girts Silis
-  email = girts.silis@gmail.com
+	name = Girts Silis
+	email = girts.silis@gmail.com
 [giggle]
   main-window-maximized = false
   main-window-geometry = 559x597+0+0
@@ -39,6 +39,7 @@
   cleanse = "!git ls-files --others --exclude-standard | xargs rm"
   rma = "!git ls-files --deleted | xargs git rm"
 	d = difftool
+  find = log --full-history --
 [color]
   diff = auto
   status = auto
